@@ -1,14 +1,18 @@
 import Daycare from "./components/Daycare";
-import Region from "./components/Region";
+import RegionBtn from "./components/RegionBtn";
+import { Routes, Route } from 'react-router-dom'
+import AllDaycaresPage from "./pages/AllDaycares";
+import AddDaycarePage from './pages/AddDaycare';
+import FavouritesPage from './pages/Favourites'
 
 function App() {
   return (
     <div>
-      <h1>Find Daycare</h1>
-      <Region name="Burnaby" />
-      <Region name="Coquitlam" />
-      <Region name="New Westminster" />
-      <Daycare />
+      <Routes>
+        <Route path="/" element={<AllDaycaresPage />} />
+        <Route path="/add-daycare" element={<AddDaycarePage />} />
+        <Route path="/favourites" element={<FavouritesPage />} />
+      </Routes>
     </div>
   );
 }
