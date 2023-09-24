@@ -7,6 +7,7 @@ function App() {
       <h1>Find Daycare</h1>
       <Region name="Burnaby" />
       <Region name="Coquitlam" />
+      <Region name="New Westminster" />
       <Daycare />
     </div>
   );
