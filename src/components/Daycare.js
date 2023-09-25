@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Daycare = () => {
     return (
         <div className='bg-gray-400 w-1/3 p-4 m-4'>

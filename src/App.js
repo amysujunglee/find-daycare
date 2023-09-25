@@ -1,5 +1,3 @@
-import Daycare from "./components/Daycare";
-import RegionBtn from "./components/RegionBtn";
 import { Routes, Route } from 'react-router-dom'
 import AllDaycaresPage from "./pages/AllDaycares";
 import AddDaycarePage from './pages/AddDaycare';

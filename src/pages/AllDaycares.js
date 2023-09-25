@@ -1,4 +1,3 @@
-import React from 'react'
 import RegionBtn from '../components/RegionBtn'
 import Daycare from '../components/Daycare'
 import Header from '../components/Header'
