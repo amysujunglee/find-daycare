@@ -1,4 +1,4 @@
-import RegionBtn from '../components/RegionBtn'
+import RegionBtn from '../components/layout/RegionBtn'
 import Daycare from '../components/daycares/DaycareItem'
 
 const AllDaycaresPage = () => {
