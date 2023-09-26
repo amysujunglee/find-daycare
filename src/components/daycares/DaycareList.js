@@ -1,4 +1,3 @@
-import React from 'react'
 import DaycareItem from './DaycareItem'
 
 const DaycareList = (props) => {
