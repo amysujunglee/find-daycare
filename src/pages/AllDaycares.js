@@ -1,5 +1,7 @@
+import DaycareList from '../components/daycares/DaycareList'
+import DAYCARE_DATA from '../components/data'
 import RegionBtn from '../components/layout/RegionBtn'
-import Daycare from '../components/daycares/DaycareItem'
+
 
 const AllDaycaresPage = () => {
     return (
@@ -11,7 +13,7 @@ const AllDaycaresPage = () => {
                 <RegionBtn name="New Westminster" />
                 <RegionBtn name="Port Moody" />
             </div>
-            <Daycare />
+            <DaycareList daycares={DAYCARE_DATA} />
         </div>
     )
 }

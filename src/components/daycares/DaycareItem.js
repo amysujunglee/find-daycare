@@ -1,23 +1,37 @@
-import DAYCARE_DATA from "../data"
-
-const Daycare = () => {
+const DaycareItem = (props) => {
     return (
-        <div className="flex">
-            {DAYCARE_DATA.map(daycare => {
-                return <ul className='bg-gray-400 w-1/3 p-4 m-4'>
-                    {/* <li key={daycare.id}><img src={daycare.image} alt={`${daycare.name}`} /></li> */}
-                    {daycare.name && <li key={daycare.id}><span>Name: </span>{daycare.name}</li>}
-                    {daycare.type && <li key={daycare.id}><span>Type: </span>{daycare.type}</li>}
-                    {daycare.maxCap && <li key={daycare.id}><span>Max capacity: </span>{daycare.maxCap}</li>}
-                    {daycare.owner && <li key={daycare.id}><span>Owner: </span>{daycare.owner}</li>}
-                    {daycare.address && <li key={daycare.id}><span>Address: </span>{daycare.address}</li>}
-                    {<daycare className="phoneNum"></daycare> && <li key={daycare.id}><span>Phone number: </span>{daycare.phoneNumber}</li>}
-                    {daycare.google && <li key={daycare.id}><span>Google Reviews/Ratings: </span>{daycare.google}</li>}
-                    {daycare.FHreport && <li key={daycare.id}><span>Fraser Health report: </span>{daycare.FHreport}</li>}
-                </ul>
-            })}
-        </div>
+        <li key={props.id} className="bg-gray-200 p-4">
+            {props.image &&
+                <div>
+                    <img src={props.image} alt={props.name} />
+                </div>
+            }
+            {props.name &&
+                <p><span>Name: </span>{props.name}</p>
+            }
+            {props.type &&
+                <p><span>Type: </span>{props.type}</p>
+            }
+            {props.maxCap &&
+                <p><span>Max Capacity: </span>{props.maxCap}</p>
+            }
+            {props.owner &&
+                <p><span>Owner: </span>{props.owner}</p>
+            }
+            {props.address &&
+                <p><span>Address: </span>{props.address}</p>
+            }
+            {props.dphoneNumber &&
+                <p><span>Phone number: </span>{props.phoneNumber}</p>
+            }
+            {props.google &&
+                <p><span>Google Reviews/Ratings: </span>{props.google}</p>
+            }
+            {props.FHreport &&
+                <p><span>Fraser Health report: </span>{props.FHreport}</p>
+            }
+        </li>
     )
 }
 
-export default Daycare
+export default DaycareItem
