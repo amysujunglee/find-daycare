@@ -6,6 +6,7 @@ const DaycareItem = (props) => {
             <Card>
                 {props.image && <div><img src={props.image} alt={props.name} /></div>}
                 {props.name && <p><span>Name: </span>{props.name}</p>}
+                {props.region && <p><span>Region: </span>{props.region}</p>}
                 {props.type && <p><span>Type: </span>{props.type}</p>}
                 {props.maxCap && <p><span>Max Capacity: </span>{props.maxCap}</p>}
                 {props.owner && <p><span>Owner: </span>{props.owner}</p>}

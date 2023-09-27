@@ -1,8 +1,8 @@
+import DaycareForm from "../components/daycares/DaycareForm"
+
 const AddDaycarePage = () => {
     return (
-        <div>
-            Add Daycare page
-        </div>
+        <DaycareForm />
     )
 }
 
