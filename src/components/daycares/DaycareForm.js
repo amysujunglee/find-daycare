@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import Card from '../ui/Card'
 
-const DaycareForm = () => {
+const DaycareForm = (props) => {
     const nameInputRef = useRef();
     const regionInputRef = useRef();
     const addressInputRef = useRef();
@@ -22,7 +22,7 @@ const DaycareForm = () => {
             phoneNumber: enteredPhoneNumber
         }
 
-        console.log(daycareData)
+        props.onAddDaycare(daycareData)
     }
 
     return (
