@@ -1,7 +1,9 @@
+import { useNavigate } from 'react-router-dom'
 import DaycareForm from "../components/daycares/DaycareForm"
 
 const AddDaycarePage = () => {
-    const addMeetupHandler = (daycareData) => {
+    const navigate = useNavigate();
+    const addDaycareHandler = (daycareData) => {
         fetch('https://find-daycare-default-rtdb.firebaseio.com/daycares.json',
             {
                 method: 'POST',
@@ -10,13 +12,14 @@ const AddDaycarePage = () => {
                     'Content-Type': 'application/json'
                 }
             }
-        )
-
+        ).then(() => {
+            navigate('/');
+        })
     }
     return (
         <section>
             <h1>Add Daycare</h1>
-            <DaycareForm onAddDaycare={addMeetupHandler} />
+            <DaycareForm onAddDaycare={addDaycareHandler} />
         </section>
 
     )
