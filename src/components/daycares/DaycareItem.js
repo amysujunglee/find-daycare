@@ -5,7 +5,7 @@ const DaycareItem = (props) => {
         <li key={props.id}>
             <Card>
                 <div className="bg-gray-300 h-[200px] mb-4">
-                    {props.image && <img src={props.image} alt={props.name} className="h-full" />}
+                    {props.image && <img src={props.image} alt={props.name} className="h-full w-full object-cover" />}
                 </div>
                 {props.name && <p><span>Name: </span>{props.name}</p>}
                 {props.region && <p><span>Region: </span>{props.region}</p>}
@@ -15,7 +15,7 @@ const DaycareItem = (props) => {
                 {props.address && <p><span>Address: </span>{props.address}</p>}
                 {props.dphoneNumber && <p><span>Phone number: </span>{props.phoneNumber}</p>}
                 {props.google && <p><span>Google Reviews/Ratings: </span>{props.google}</p>}
-                {props.FHreport && <p><span>Fraser Health report: </span>{props.FHreport}</p>}
+                {props.FHreport && <p><span>Fraser Health report: </span><a href={props.FHreportUrl} target="_blank" rel="noreferrer" className="underline">{props.FHreport}</a></p>}
             </Card >
         </li >
     )
