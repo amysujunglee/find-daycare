@@ -1,7 +1,7 @@
 const DAYCARE_DATA = [
     {
         id: 1,
-        region: 'coquitlam',
+        region: 'Coquitlam',
         name: 'Little Stars Family Child Care',
         type: 'Family',
         maxCap: 7,
@@ -10,11 +10,11 @@ const DAYCARE_DATA = [
         phoneNumber: '(604) 767-9137',
         google: '5/5 (1 review)',
         FHreport: 'No complaints/inspections',
-        image: 'https://g.co/kgs/rkPY39',
+        image: 'https://lh3.googleusercontent.com/p/AF1QipPyxZCWO6E8E39J_tfhjInWY0K4HrNSMk4hpeNO=s2880-w2880-h1712-rw',
     },
     {
         id: 2,
-        region: 'coquitlam',
+        region: 'Coquitlam',
         name: 'Julie & Friends Family Child Care',
         type: 'Family',
         maxCap: 7,
