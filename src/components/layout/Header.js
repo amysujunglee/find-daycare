@@ -8,6 +8,7 @@ const Header = () => {
                 <ul className='flex gap-8'>
                     <li><Link to='/' className='hover:underline hover:underline-offset-4'>All Daycares</Link></li>
                     <li><Link to="/favourites" className='hover:underline hover:underline-offset-4'>My List</Link></li>
+                    <li><Link to="/login" className='hover:underline hover:underline-offset-4'>Log In</Link></li>
                 </ul>
             </nav>
         </header >

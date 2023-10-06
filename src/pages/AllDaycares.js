@@ -11,6 +11,7 @@ const AllDaycaresPage = () => {
                 <RegionBtn name="Coquitlam" />
                 <RegionBtn name="New Westminster" />
                 <RegionBtn name="Port Moody" />
+                <RegionBtn name="Maple Ridge" />
             </div>
             <DaycareList daycares={DAYCARE_DATA} />
         </div>
