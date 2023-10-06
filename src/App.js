@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
 import AllDaycaresPage from "./pages/AllDaycares";
-import AddDaycarePage from './pages/AddDaycare';
 import FavouritesPage from './pages/Favourites'
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
@@ -11,7 +10,6 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<AllDaycaresPage />} />
-        <Route path="/add-daycare" element={<AddDaycarePage />} />
         <Route path="/favourites" element={<FavouritesPage />} />
       </Routes>
       <Footer />

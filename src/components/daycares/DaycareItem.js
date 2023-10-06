@@ -4,12 +4,9 @@ const DaycareItem = (props) => {
     return (
         <li key={props.id}>
             <Card>
-                {props.image ?
-                    <div>
-                        <img src={props.image} alt={props.name} className="h-[200px]" />
-                    </div> :
-                    <div className="bg-gray-300 h-[200px]"></div>
-                }
+                <div className="bg-gray-300 h-[200px] mb-4">
+                    {props.image && <img src={props.image} alt={props.name} className="h-full" />}
+                </div>
                 {props.name && <p><span>Name: </span>{props.name}</p>}
                 {props.region && <p><span>Region: </span>{props.region}</p>}
                 {props.type && <p><span>Type: </span>{props.type}</p>}
