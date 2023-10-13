@@ -1173,7 +1173,7 @@ const DAYCARE_DATA = [
         google: '',
         FHreport: 'N/A',
         FHreportUrl: 'https://www.healthspace.ca/clients/fha/FHA_Website.nsf/CCFL-FacilityHistory?OpenView&RestrictToCategory=3787520CD28EC1C3882578500069DAFB',
-        image: 'https://maps.googleapis.com/maps/api/streetview?location=49.222124,-123.002792&size=950x500&key=AIzaSyBi4v3Q9EwhOj96QxsjJ6P5ZRtcgeqKFeM',
+        image: 'https://maps.googleapis.com/maps/api/streetview?channel=mb-pdp-publicrecord&location=6797+Dow+Ave%2C+Burnaby%2C+BC+V5H+3E1&size=665x441&source=outdoor&client=gme-redfin&signature=a1QakTY1LZocfQYwAi4Jrb9qmlI=',
     },
     {
         id: 85,
