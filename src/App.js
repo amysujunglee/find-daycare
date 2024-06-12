@@ -1,17 +1,18 @@
+import './App.css'
 import { Routes, Route } from 'react-router-dom'
-import AllDaycaresPage from "./pages/AllDaycares";
-import FavouritesPage from './pages/Favourites'
+import AllDaycares from "./components/pages/AllDaycares";
+import MyFavourites from './components/pages/MyFavourites'
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
-import LogIn from './pages/LogIn';
+import LogIn from './components/pages/LogIn';
 
 function App() {
   return (
     <div className='bg-gray-100'>
       <Header />
       <Routes>
-        <Route path="/" element={<AllDaycaresPage />} />
-        <Route path="/favourites" element={<FavouritesPage />} />
+        <Route path="/" element={<AllDaycares />} />
+        <Route path="/favourites" element={<MyFavourites />} />
         <Route path="/login" element={<LogIn />} />
       </Routes>
       <Footer />
