@@ -1,10 +1,10 @@
-import React from "react";
+const updateYear = new Date().getFullYear();
 
 const Footer = () => {
   return (
     <footer className="bg-gray-300 p-4">
       <p className="text-sm text-gray-700">
-        Copyright &copy; 2024 Amy Lee. All Right Reserved.
+        Copyright &copy; {updateYear} Amy Lee. All Right Reserved.
       </p>
     </footer>
   );
