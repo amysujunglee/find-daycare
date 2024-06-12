@@ -2,11 +2,13 @@ import { Link } from "react-router-dom";
 import Logo from "./Logo";
 import MENU_DATA from "../utils/menus";
 
+// TODO: Create a search function
+
 const Header = () => {
   return (
     <header className="bg-gray-300 p-4 flex justify-between items-center">
       <div>
-        <Link to="/" className="hover:underline hover: underline - offset - 4">
+        <Link to="/">
           <Logo />
         </Link>
       </div>

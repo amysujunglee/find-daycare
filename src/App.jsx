@@ -2,10 +2,10 @@ import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import FindDaycare from "./components/pages/FindDaycare";
 import MyFavourites from "./components/pages/MyFavourites";
-import Header from "./components/layout/Header";
-import Footer from "./components/layout/Footer";
 import Login from "./components/pages/Login";
 import HomeLayout from "./components/layout/HomeLayout";
+
+// TODO: Create the 404 page
 
 const router = createBrowserRouter([
   {
@@ -15,10 +15,6 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <FindDaycare />,
-      },
-      {
-        path: "find-daycare",
         element: <FindDaycare />,
       },
       {
