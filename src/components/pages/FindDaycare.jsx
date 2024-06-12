@@ -1,10 +1,9 @@
-import DaycareList from "../daycares/DaycareList";
-import DAYCARE_DATA from "../utils/daycare";
-
 import { useState } from "react";
+import DAYCARE_DATA from "../utils/daycares";
+import DaycareList from "../daycares/DaycareList";
 import Regions from "../layout/Regions";
 
-const AllDaycares = () => {
+const FindDaycare = () => {
   const [daycares, setDaycares] = useState(DAYCARE_DATA);
   const buttonItems = [...new Set(DAYCARE_DATA.map((item) => item.region))];
 
@@ -26,4 +25,4 @@ const AllDaycares = () => {
   );
 };
 
-export default AllDaycares;
+export default FindDaycare;
