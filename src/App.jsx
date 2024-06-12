@@ -18,6 +18,10 @@ const router = createBrowserRouter([
         element: <FindDaycare />,
       },
       {
+        path: "find-daycare",
+        element: <FindDaycare />,
+      },
+      {
         path: "my-favourites",
         element: <MyFavourites />,
       },

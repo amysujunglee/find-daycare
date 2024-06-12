@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
+import MENU_DATA from "../utils/menus";
 
 const Header = () => {
   return (
@@ -11,27 +12,16 @@ const Header = () => {
       </div>
       <nav>
         <ul className="flex gap-8">
-          <li>
-            <Link to="/" className="hover:underline hover:underline-offset-4">
-              Find Daycare
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/my-favourites"
-              className="hover:underline hover:underline-offset-4"
-            >
-              My List
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/login"
-              className="hover:underline hover:underline-offset-4"
-            >
-              Log In
-            </Link>
-          </li>
+          {MENU_DATA.map((item) => (
+            <li key={item.id}>
+              <Link
+                to={item.path}
+                className="hover:underline hover:underline-offset-4"
+              >
+                {item.title}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>

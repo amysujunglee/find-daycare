@@ -3,6 +3,8 @@ import DAYCARE_DATA from "../utils/daycares";
 import DaycareList from "../daycares/DaycareList";
 import Regions from "../layout/Regions";
 
+// TODO: Inform the users where the daycares list is coming from
+
 const FindDaycare = () => {
   const [daycares, setDaycares] = useState(DAYCARE_DATA);
   const buttonItems = [...new Set(DAYCARE_DATA.map((item) => item.region))];
@@ -15,7 +17,6 @@ const FindDaycare = () => {
   return (
     <div>
       <h1 className="text-3xl w-full text-center my-4">Find a daycare</h1>
-      {/* TODO: Inform the users where the daycares list is coming from */}
       {/* <p>This daycares are all from the Gov. website:</p> */}
       <div className="flex w-full mx-0 gap-3 justify-center">
         <Regions buttonItems={buttonItems} filterDaycares={filterDaycares} />
