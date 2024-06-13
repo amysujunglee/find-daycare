@@ -16,7 +16,9 @@ const FindDaycare = () => {
 
   return (
     <div>
-      <h1 className="text-3xl w-full text-center my-4">Find a daycare</h1>
+      <h1 className="text-3xl w-full text-center my-4">
+        Find a Home Daycare in BC, Canada
+      </h1>
       {/* <p>This daycares are all from the Gov. website:</p> */}
       <div className="flex w-full mx-0 gap-3 justify-center">
         <Regions buttonItems={buttonItems} filterDaycares={filterDaycares} />
