@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="bg-gray-300 p-4 flex justify-between items-center">
       <div>
-        <Link to="/">Logo</Link>
+        <Link to="/find-daycare">Logo</Link>
       </div>
     </header>
   );
