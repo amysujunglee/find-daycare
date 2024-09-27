@@ -4,7 +4,7 @@ const MENU_DATA = [
     {
         id: 1,
         title: "Find Daycare",
-        path: "/",
+        path: "/find-daycare",
         icon: "",
     },
     // {

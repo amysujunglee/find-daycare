@@ -1,22 +1,26 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/ui/NavBar";
-import HomeLayout from "./layout/HomeLayout";
-import Login from "./components/pages/Login";
-import MyFavourites from "./components/pages/MyFavourites";
+// import Login from "./components/pages/Login";
+// import MyFavourites from "./components/pages/MyFavourites";
+import Header from "./layout/Header";
+import Footer from "./layout/Footer";
+import FindDaycare from "./components/pages/FindDaycare";
 
 // TODO: Create the 404 page
 
 const App = () => {
   return (
-    <div>
+    <>
+      <Header />
       <NavBar />
       <Routes>
-        <Route path="/" element={<HomeLayout />}></Route>
-        <Route path="/login" element={<Login />}></Route>
-        <Route path="/my-favourites" element={<MyFavourites />}></Route>
+        <Route path="/find-daycare" element={<FindDaycare />}></Route>
+        {/* <Route path="/login" element={<Login />}></Route>
+        <Route path="/my-favourites" element={<MyFavourites />}></Route> */}
       </Routes>
-    </div>
+      <Footer />
+    </>
   );
 };
 

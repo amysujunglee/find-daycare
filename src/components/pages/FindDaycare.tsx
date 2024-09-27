@@ -19,6 +19,7 @@ const FindDaycare = () => {
       <h1 className="text-3xl w-full text-center my-4">
         Find a Home Daycare in BC, Canada!
       </h1>
+      <p className="text-center">Last updated: December 2023</p>
       {/* <p>This daycares are all from the Gov. website:</p> */}
       <div className="flex w-full mx-0 gap-3 justify-center">
         {/* <Regions buttonItems={buttonItems} filterDaycares={filterDaycares} /> */}
