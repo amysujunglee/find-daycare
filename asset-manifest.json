@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/find-daycare/static/css/main.30f55896.css",
-    "main.js": "/find-daycare/static/js/main.ddaf147f.js",
+    "main.js": "/find-daycare/static/js/main.e8498fd3.js",
     "index.html": "/find-daycare/index.html",
     "main.30f55896.css.map": "/find-daycare/static/css/main.30f55896.css.map",
-    "main.ddaf147f.js.map": "/find-daycare/static/js/main.ddaf147f.js.map"
+    "main.e8498fd3.js.map": "/find-daycare/static/js/main.e8498fd3.js.map"
   },
   "entrypoints": [
     "static/css/main.30f55896.css",
-    "static/js/main.ddaf147f.js"
+    "static/js/main.e8498fd3.js"
   ]
 }
