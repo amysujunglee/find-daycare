@@ -3,7 +3,12 @@ import DAYCARE_DATA from "../data/daycares";
 import DaycareList from "../daycares/DaycareList";
 import Regions from "../../layout/Regions";
 
+// TODO: Create a logo
+// TODO: Display an empty image
+// TODO: Responsive for tablet and mobile
 // TODO: Inform the users where the daycares list is coming from
+// TODO: Filter daycares
+// TODO: Find how to hide the daycares data (API)
 
 const FindDaycare = () => {
   const [daycares, setDaycares] = useState(DAYCARE_DATA);
@@ -18,6 +23,11 @@ const FindDaycare = () => {
 
   const filterDaycareHandler = (e: any) => {
     const text = e.target.value.toLowerCase();
+  };
+
+  const displayAllDaycares = () => {
+    const allDaycareList = DAYCARE_DATA.map((daycare) => daycare);
+    setDaycares(allDaycareList);
   };
 
   return (
@@ -41,7 +51,11 @@ const FindDaycare = () => {
       </div>
 
       <div className="flex w-full mx-0 gap-3 justify-center">
-        <Regions buttonItems={buttonItems} filterDaycares={filterDaycares} />
+        <Regions
+          buttonItems={buttonItems}
+          filterDaycares={filterDaycares}
+          displayAllDaycares={displayAllDaycares}
+        />
       </div>
       <DaycareList daycares={daycares} />
     </main>
