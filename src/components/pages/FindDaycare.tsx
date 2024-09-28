@@ -7,7 +7,9 @@ import Regions from "../../layout/Regions";
 
 const FindDaycare = () => {
   const [daycares, setDaycares] = useState(DAYCARE_DATA);
-  //   const buttonItems = [...new Set(DAYCARE_DATA.map((item) => item.region))];
+  const buttonItems = [
+    ...new Set<string>(DAYCARE_DATA.map((item) => item.region)),
+  ];
 
   const filterDaycares = (region: any) => {
     const daycareList = DAYCARE_DATA.filter((item) => item.region === region);
@@ -19,10 +21,10 @@ const FindDaycare = () => {
       <h1 className="text-3xl w-full text-center my-4">
         Find a Home Daycare in BC, Canada!
       </h1>
-      <p className="text-center">Last updated: December 2023</p>
-      {/* <p>This daycares are all from the Gov. website:</p> */}
+      <p className="text-center">Last updated: December, 2023</p>
+
       <div className="flex w-full mx-0 gap-3 justify-center">
-        {/* <Regions buttonItems={buttonItems} filterDaycares={filterDaycares} /> */}
+        <Regions buttonItems={buttonItems} filterDaycares={filterDaycares} />
       </div>
       <DaycareList daycares={daycares} />
     </div>
