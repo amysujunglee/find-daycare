@@ -16,9 +16,10 @@ const FindDaycare = () => {
     ...new Set<string>(DAYCARE_DATA.map((item) => item.region)),
   ];
 
-  const filterDaycares = (region: any) => {
+  const filterDaycares = (region: any, e: any) => {
     const daycareList = DAYCARE_DATA.filter((item) => item.region === region);
     setDaycares(daycareList);
+    // e.target.classList.add("active");
   };
 
   const filterDaycareHandler = (e: any) => {

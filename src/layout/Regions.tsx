@@ -12,7 +12,11 @@ const Regions = ({ buttonItems, filterDaycares, displayAllDaycares }: any) => {
         All<span>({DAYCARE_DATA.length})</span>
       </button>
       {buttonItems.map((item: any) => (
-        <button className="btn" key={item} onClick={() => filterDaycares(item)}>
+        <button
+          className="btn"
+          key={item}
+          onClick={(e) => filterDaycares(item, e)}
+        >
           {item}
           <span>({daycaresNumber(item)})</span>
         </button>

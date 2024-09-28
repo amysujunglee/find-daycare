@@ -9,4 +9,7 @@ body {
 
 .btn {
   @apply bg-gray-200 p-2 border hover:bg-gray-400;
+  &.active {
+    @apply bg-blue-800;
+  }
 }
