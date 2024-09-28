@@ -3,7 +3,7 @@ import DAYCARE_DATA from "../data/daycares";
 import DaycareList from "../daycares/DaycareList";
 import Regions from "../../layout/Regions";
 
-// TODO: Create a logo
+// TODO: Create a logo + favicon
 // TODO: Display an empty image
 // TODO: Responsive for tablet and mobile
 // TODO: Inform the users where the daycares list is coming from
