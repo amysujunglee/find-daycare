@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import NavBar from "./components/ui/NavBar";
+// import NavBar from "./components/ui/NavBar";
 // import Login from "./components/pages/Login";
 // import MyFavourites from "./components/pages/MyFavourites";
 import Header from "./layout/Header";
@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <NavBar />
+      {/* <NavBar /> */}
       <Routes>
         <Route path="/find-daycare" element={<FindDaycare />}></Route>
         {/* <Route path="/login" element={<Login />}></Route>
