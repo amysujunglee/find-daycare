@@ -16,18 +16,35 @@ const FindDaycare = () => {
     setDaycares(daycareList);
   };
 
+  const filterDaycareHandler = (e: any) => {
+    const text = e.target.value.toLowerCase();
+  };
+
   return (
-    <div>
-      <h1 className="text-3xl w-full text-center my-4">
-        Find a Home Daycare in BC, Canada!
-      </h1>
-      <p className="text-center">Last updated: December, 2023</p>
+    <main>
+      <div className="mb-12">
+        <h1 className="text-3xl w-full text-center mt-8 mb-2">
+          Find a Home Daycare in BC, Canada 🇨🇦
+        </h1>
+        <p className="text-center text-gray-500">
+          Last updated: December, 2023
+        </p>
+      </div>
+      <div className="mt-4 mb-8 mx-auto w-1/2">
+        <input
+          type="text"
+          className="border-b-2 border-blue-900 w-full p-2"
+          id="filter"
+          placeholder="Search by daycare name"
+          onChange={filterDaycareHandler}
+        />
+      </div>
 
       <div className="flex w-full mx-0 gap-3 justify-center">
         <Regions buttonItems={buttonItems} filterDaycares={filterDaycares} />
       </div>
       <DaycareList daycares={daycares} />
-    </div>
+    </main>
   );
 };
 

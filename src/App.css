@@ -8,5 +8,5 @@ body {
 }
 
 .btn {
-  @apply bg-gray-200 p-2 border border-red-800 hover:bg-gray-400;
+  @apply bg-gray-200 p-2 border hover:bg-gray-400;
 }

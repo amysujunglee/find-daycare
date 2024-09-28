@@ -1078,7 +1078,7 @@ const DAYCARE_DATA = [
     address: "6100 Broadway Burnaby, V5B 2Y2",
     phoneNumber: "(778) 997-2666",
     google: "",
-    FHreport: "2 follow-up inspections",
+    FHreport: "4 follow-up inspections",
     FHreportUrl:
       "https://www.healthspace.ca/clients/fha/FHA_Website.nsf/CCFL-FacilityHistory?OpenView&RestrictToCategory=47093C564366A2A188257B330077C4D4",
     image:
@@ -1283,7 +1283,7 @@ const DAYCARE_DATA = [
     address: "4620 Pender St Burnaby, V5C 2N3",
     phoneNumber: "(604) 678-2893",
     google: "",
-    FHreport: "1 follow-up inspection",
+    FHreport: "2 follow-up inspections",
     FHreportUrl:
       "https://www.healthspace.ca/clients/fha/FHA_Website.nsf/CCFL-FacilityHistory?OpenView&RestrictToCategory=BCD0D9C1F8DF733E882584C8005BA24E",
     image:
